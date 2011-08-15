@@ -46,4 +46,7 @@ filetype indent on          " auto-load file type indent
 " plug-ins
 call pathogen#infect()
 
-" missssspell wordz 
+" colors
+set background=dark
+colorscheme solarized
+
