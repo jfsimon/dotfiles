@@ -1,0 +1,26 @@
+[user]
+	name = Jean-François Simon
+	email = contact@jfsimon.fr
+
+[github]
+    user = jfsimon
+
+[color]
+    diff = true
+    status = auto
+    branch = always
+    interactive = always
+    ui = always
+    pager = true
+
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    df = diff
+    lg = log --pretty=oneline --abbrev-commit --graph
+    amend = commit --amend
+    who = shortlog -sne
+    unstage = reset HEAD
+    undo = git reset --soft HEAD^
