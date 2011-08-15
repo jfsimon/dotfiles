@@ -43,4 +43,7 @@ filetype on                 " enable file type detection
 filetype plugin on          " auto-load file type plug-in
 filetype indent on          " auto-load file type indent
 
+" plug-ins
+call pathogen#infect()
+
 " missssspell wordz 
