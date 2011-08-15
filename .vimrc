@@ -44,7 +44,9 @@ filetype plugin on          " auto-load file type plug-in
 filetype indent on          " auto-load file type indent
 
 " plug-ins
-call pathogen#infect()
+call pathogen#infect()      " pathogen plugin
+imap <buffer> <F5> <C-O>:call PhpInsertUse()<CR>
+map <buffer> <F5> :call PhpInsertUse()<CR>
 
 " colors
 set background=dark
