@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-autocomplpop"]
 	path = .vim/bundle/vim-autocomplpop
 	url = https://github.com/chrismetcalf/vim-autocomplpop.git
+[submodule ".vim/bundle/vim-supertab"]
+	path = .vim/bundle/vim-supertab
+	url = https://github.com/tsaleh/vim-supertab.git
