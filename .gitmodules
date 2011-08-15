@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-twig"]
 	path = .vim/bundle/vim-twig
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule ".vim/bundle/vim-autocomplpop"]
+	path = .vim/bundle/vim-autocomplpop
+	url = https://github.com/chrismetcalf/vim-autocomplpop.git
