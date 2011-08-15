@@ -10,6 +10,7 @@ set backspace=indent,eol,start
 set smarttab
 set smartindent             " manage indentation inside braces
 set paste                   " no auto-indent on paste
+set shiftround              " tab go to next tabstop
 
 " search
 set incsearch               " perform search as you type it
@@ -28,6 +29,8 @@ set showcmd                 " display incomplete commands
 set showmode                " show mode status
 set confirm                 " deal with the unsaved buffer warning more conveniently
 setlocal spell spelllang=en_us " enable spelling
+set list                    " show whitespaces
+set listchars=tab:»·,trail:· "show tabs and trailing
 
 " mouse options
 set mouse=a                 " turn mouse on for all modes
