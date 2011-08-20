@@ -14,6 +14,14 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 
 #-------------------------------------------------------------
+# Internal commands
+#-------------------------------------------------------------
+
+_command_exists() {
+    type "$1" &> /dev/null ;
+}
+
+#-------------------------------------------------------------
 # Customize less
 #-------------------------------------------------------------
 
@@ -193,8 +201,13 @@ shopt -s extglob         # Necessary,
 
 
 #-------------------------------------------------------------
-# Some auto launch
+# Terminal colors
 #-------------------------------------------------------------
 
+if _command_exists dircolors; then
+    eval `dircolors ~/.dircolors/dircolors.256dark`
+fi
+
 export TERM=xterm-256color
+export TERM=screen-256color
 
