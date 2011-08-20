@@ -1,6 +1,6 @@
 [user]
-	name = Jean-François Simon
-	email = contact@jfsimon.fr
+    name = Jean-François Simon
+    email = contact@jfsimon.fr
 
 [github]
     user = jfsimon
@@ -24,3 +24,12 @@
     who = shortlog -sne
     unstage = reset HEAD
     undo = git reset --soft HEAD^
+    # git-svn
+    srb = svn rebase
+    sdc = svn dcommit
+    sbr = svn branch
+    sin = svn info
+    sre = svn reset
+    sbra = !git  branch -a | grep --invert-match /tags/
+    ssrb = "!git stash; git srb; git stash pop"
+    ssdc = "!git stash; git sdc; git stash pop"
