@@ -14,7 +14,7 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 
 #-------------------------------------------------------------
-# Customize less 
+# Customize less
 #-------------------------------------------------------------
 
 # make less more friendly for non-text input files, see lesspipe(1)
@@ -42,12 +42,12 @@ case "$TERM" in
 esac
 
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
 else
-	color_prompt=
+    color_prompt=
 fi
 
 if [ "$color_prompt" = yes ]; then
@@ -65,6 +65,36 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+#-------------------------------------------------------------
+# Colors
+#-------------------------------------------------------------
+
+C_DEFAULT="\[\033[m\]"
+C_WHITE="\[\033[1m\]"
+C_BLACK="\[\033[30m\]"
+C_RED="\[\033[31m\]"
+C_GREEN="\[\033[32m\]"
+C_YELLOW="\[\033[33m\]"
+C_BLUE="\[\033[34m\]"
+C_PURPLE="\[\033[35m\]"
+C_CYAN="\[\033[36m\]"
+C_LIGHTGRAY="\[\033[37m\]"
+C_DARKGRAY="\[\033[1;30m\]"
+C_LIGHTRED="\[\033[1;31m\]"
+C_LIGHTGREEN="\[\033[1;32m\]"
+C_LIGHTYELLOW="\[\033[1;33m\]"
+C_LIGHTBLUE="\[\033[1;34m\]"
+C_LIGHTPURPLE="\[\033[1;35m\]"
+C_LIGHTCYAN="\[\033[1;36m\]"
+C_BG_BLACK="\[\033[40m\]"
+C_BG_RED="\[\033[41m\]"
+C_BG_GREEN="\[\033[42m\]"
+C_BG_YELLOW="\[\033[43m\]"
+C_BG_BLUE="\[\033[44m\]"
+C_BG_PURPLE="\[\033[45m\]"
+C_BG_CYAN="\[\033[46m\]"
+C_BG_LIGHTGRAY="\[\033[47m\]"
 
 #-------------------------------------------------------------
 # Aliases
@@ -95,8 +125,8 @@ alias lc='ls -ltcr'        # sort by and show change time, most recent last
 alias lu='ls -ltur'        # sort by and show access time, most recent last
 alias lt='ls -ltr'         # sort by date, most recent last
 alias lr='ls -lR'          # recursive ls
-alias ld='ls -al -d * | egrep "^d"' # only subdirectories  
-alias lt='ls -alt | head -20' # recently changed files  
+alias ld='ls -al -d * | egrep "^d"' # only subdirectories
+alias lt='ls -alt | head -20' # recently changed files
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 
 # more readable
@@ -162,5 +192,9 @@ shopt -s extglob         # Necessary,
 #set +o nounset          # otherwise some completions will fail.
 
 
+#-------------------------------------------------------------
+# Some auto launch
+#-------------------------------------------------------------
 
+export TERM=xterm-256color
 
