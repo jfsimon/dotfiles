@@ -14,12 +14,12 @@
     pager = true
 
 [alias]
-    st = status
+    st = status -uall
     co = checkout
     ci = commit
     br = branch
     df = diff
-    lg = log --pretty=oneline --abbrev-commit --graph
+    lg = log --pretty=oneline --abbrev-commit --graph --decorate
     amend = commit --amend
     who = shortlog -sne
     unstage = reset HEAD
