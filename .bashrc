@@ -199,7 +199,6 @@ fi
 shopt -s extglob         # Necessary,
 #set +o nounset          # otherwise some completions will fail.
 
-
 #-------------------------------------------------------------
 # Terminal colors
 #-------------------------------------------------------------
@@ -210,4 +209,16 @@ fi
 
 export TERM=xterm-256color
 export TERM=screen-256color
+
+#-------------------------------------------------------------
+# Tmux session
+#-------------------------------------------------------------
+
+if [ ! -z "$PS1" ]; then
+    _tmuxrc="$HOME/.bashrc.tmux"
+    if [ -e $_tmuxrc ]; then
+        source $_tmuxrc
+        _tmux-init-history
+    fi
+fi
 
