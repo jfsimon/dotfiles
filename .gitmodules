@@ -22,3 +22,6 @@
 [submodule ".dircolors"]
 	path = .dircolors
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule ".WebIde10/config/templates"]
+	path = .WebIde10/config/templates
+	url = https://github.com/cordoval/PHPStorm-Live-Templates-for-Symfony2.git
