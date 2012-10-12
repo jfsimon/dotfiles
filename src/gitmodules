@@ -1,0 +1,27 @@
+[submodule "src/vim/bundle/vim-colors-solarized"]
+	path = src/vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "src/vim/bundle/vim-fugitive"]
+	path = src/vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "src/vim/bundle/vim-php-namespace"]
+	path = src/vim/bundle/vim-php-namespace
+	url = https://github.com/arnaud-lb/vim-php-namespace.git
+[submodule "src/vim/bundle/vim-php-stuff"]
+	path = src/vim/bundle/vim-php-stuff
+	url = https://github.com/paulyg/Vim-PHP-Stuff.git
+[submodule "src/vim/bundle/vim-twig"]
+	path = src/vim/bundle/vim-twig
+	url = https://github.com/beyondwords/vim-twig.git
+[submodule "src/vim/bundle/vim-autocomplpop"]
+	path = src/vim/bundle/vim-autocomplpop
+	url = https://github.com/chrismetcalf/vim-autocomplpop.git
+[submodule "src/vim/bundle/vim-supertab"]
+	path = src/vim/bundle/vim-supertab
+	url = https://github.com/tsaleh/vim-supertab.git
+[submodule "src/dircolors"]
+	path = src/dircolors
+	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "src/WebIde10/config/templates"]
+	path = src/WebIde10/config/templates
+	url = https://github.com/cordoval/PHPStorm-Live-Templates-for-Symfony2.git
